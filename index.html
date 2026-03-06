@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FutureSmile Dental</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- THREE JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- Tensorflow -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+</head>
+
+<body>
+
+<div class="loader">
+FutureSmile
+</div>
+
+<header>
+
+<div class="logo">FutureSmile</div>
+
+<nav>
+
+<a href="#services">Services</a>
+<a href="#doctor">Doctor</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<button class="book">Book Appointment</button>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+The Future of Dentistry
+</h1>
+
+<p>
+AI powered cosmetic dentistry
+</p>
+
+<div class="buttons">
+
+<button class="gold">
+Book Appointment
+</button>
+
+<button class="outline">
+AI Smile Scan
+</button>
+
+<button class="outline">
+Virtual Consultation
+</button>
+
+</div>
+
+</div>
+
+<div id="three-container"></div>
+
+</section>
+
+<section id="services" class="services">
+
+<h2>Premium Treatments</h2>
+
+<div class="grid">
+
+<div class="service-card">
+Cosmetic Dentistry
+</div>
+
+<div class="service-card">
+Teeth Whitening
+</div>
+
+<div class="service-card">
+Dental Implants
+</div>
+
+<div class="service-card">
+Invisalign
+</div>
+
+<div class="service-card">
+Smile Makeover
+</div>
+
+<div class="service-card">
+Root Canal
+</div>
+
+</div>
+
+</section>
+
+<section class="scanner">
+
+<h2>AI Smile Scanner</h2>
+
+<input type="file" id="upload">
+
+<div id="result"></div>
+
+</section>
+
+<section id="doctor" class="doctor">
+
+<h2>Meet The Doctor</h2>
+
+<div class="doctor-card">
+
+<img src="assets/doctor.jpg">
+
+<div>
+
+<h3>Dr Alex Morgan</h3>
+
+<p>Harvard Certified Cosmetic Dentist</p>
+
+<p>15+ Years Experience</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2>Smile Transformations</h2>
+
+<div class="compare">
+
+<img src="assets/before.jpg">
+
+<img src="assets/after.jpg">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Book Consultation</h2>
+
+<form>
+
+<input placeholder="Name">
+<input placeholder="Email">
+
+<input type="date">
+
+<button>Confirm Appointment</button>
+
+</form>
+
+</section>
+
+<div class="ai-assistant">
+
+<div class="chat-header">
+AI Dental Assistant
+</div>
+
+<div class="chat-body"></div>
+
+<input placeholder="Ask about treatments">
+
+</div>
+
+<script src="app.js"></script>
+
+<script src="js/threeScene.js"></script>
+
+<script src="js/aiAssistant.js"></script>
+
+<script src="js/smileScanner.js"></script>
+
+</body>
+</html>
